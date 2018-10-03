@@ -11,7 +11,7 @@ Também recomento o uso da IDE VSCode.
 ###### Estrutura
 
 | Raiz          | N2            | N3         |
-| ------------- |:-------------:| ----------:|
+| ------------- |---------------| -----------|
 | Deploy/       | .html         |            |
 | Deploy/       | .php          |            |
 | Deploy/       | css/          | .css       |
