@@ -1,0 +1,1 @@
+$("input[data-upper=first]").keyup(function(){let t=$(this),a=t.val();1==a.length&&t.val(a.toUpperCase())}),$(".nav-link").click(function(){let t=$(this).attr("aria-controls");$(".tab-pane").each(function(){$(this).attr("id")==t?$(this).removeClass("d-none"):$(this).addClass("d-none")})}),$("#semVersao").addClass("text-danger");
