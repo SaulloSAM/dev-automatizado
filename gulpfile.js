@@ -12,8 +12,6 @@ const browserSync = require('browser-sync').create();   /* Gerencia o browser [a
 const proxyXampp = "http://localhost/site/mpsystems-app-adm/deploy/";
 const portXampp = 8080;
 
-const path = "deploy/";
-
 /* ========================================================================= */
 /* Estrutura de arquivos                                                     */
 /* [Qual quer alteração na estrutura, deve-se alterar as funções abaixo]     */
@@ -107,7 +105,7 @@ function browser () {
  * ex: ao modificar um js/app, o sistema automaticamente compila esse novo arquivo e substitui pelo anterior.
  */
 function watch () {
-    gulp.watch('deploy/scss/*.scss', compilaSass)
+    gulp.watch('deploy/scss/style/**/*.scss', compilaSass)
     gulp.watch('deploy/scss/bootstrap/**/*.scss', compilaBootstrap)
     gulp.watch('deploy/js/app/*.js', gulpJS)
     gulp.watch('deploy/js/plugins/*.js', addPlugins)
